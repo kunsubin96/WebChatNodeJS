@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>ChatRoom</title>
+	<script src="jquery.js"></script>
+	<script src="https://anhkydemowebchatnodejs.herokuapp.com/socket.io/socket.io.js"></script>
+	<script src="xuly.js"></script>
+	<link rel="stylesheet" type="text/css" href="layout.css">
+	<link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css">
+	<script src="/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<script src="45.js"></script>
+	<div id="form1">
+		<div class="container">
+
+	      <form class="form-signin">
+
+	        <h2 class="form-signin-heading">Register</h2>
+	        <h4>What is your name?</h4>
+	        <input type="text" id="txtRegister" class="form-control" placeholder="Name" required autofocus>
+	    
+	        
+	        <button class="btn btn-lg btn-success btn-block " type="button" id="btnRegister">Register</button>
+
+	      </form>
+
+ 		</div> <!-- /container -->
+	</div>
+	<div id="form2">
+		<div class="main_section">
+		   <div class="container">
+		      <div class="chat_container">
+		         <div class="col-sm-3 chat_sidebar">
+		    	 <div class="row">
+		    	 	 
+
+		            <div id="custom-search-input">
+		               <div class="input-group col-md-12">
+		                  <input type="text" class="form-control" placeholder="Add Room" id="txtRoom" />
+		               </div>
+		               <button class="btn btn-sm btn-success btn-block" type="button" id="btnAdd">Add</button>
+		            </div>
+
+		            <div class="dropdown all_conversation">
+		             	<h4 id="roomAll">Room All</h4>
+		            </div>
+		           
+		            <div class="member_list">
+		               <ul  id="dsRoom">
+		              
+		               </ul>
+		            </div></div>
+		         </div>
+		         <!--chat_sidebar-->
+				 
+				 
+		         <div class="col-sm-9 message_section">
+				 <div class="row">
+
+				 <div class="new_message_head">
+				 	  <div id="left">
+				 	  	   <h5 id="lbUser">Name: </h5>
+				 	  </div>
+				 	  <div id="right">
+				 	  	   <h5 id="lbRoom">Room: </h5>
+				 	  </div>
+				 </div><!--new_message_head-->
+				 
+				 <div class="chat_area">
+					 <ul class="list-unstyled" id="listMessage">
+					 <!-- 	
+		                <li class="left clearfix">
+		                  
+		                </li> -->
+		              
+				 	</ul>
+				 </div><!--chat_area-->
+
+		          <div class="message_write">
+		    	 <textarea class="form-control" placeholder="type a message" id="txtMessage"></textarea>
+				 <div class="clearfix"></div>
+				 <div class="chat_bottom"><a href="#" class="pull-left upload_btn"><i class="fa fa-cloud-upload" aria-hidden="true"></i>
+		 Add Files</a>
+		 <button type="button" class="pull-right btn btn-success" id="btnSend">
+		 Send</button>></div>
+				 </div>
+				 </div>
+		         </div> <!--message_section-->
+		      </div>
+		   </div>
+		</div>
+	</div>
+
+</body>
+</html>
